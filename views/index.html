@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹 메모장</title>
+</head>
+<body>
+  <h1>웹 메모장이 이렇게 어려울 일이야????????????</h1>
+  <p>그래도 만들어보자</p>
+  <form action="/memo" name="" method="post">
+    <input name="title" type="text" placeholder="간단한 제목">
+    <textarea name="description" placeholder="본문 내용"></textarea>
+    <button type="submit">제출!</button>
+  </form>
+
+  <ul>
+    {% set titles =  %}
+    {% for title in titles%}
+    <li>
+      <article>
+        <h2>{{title}}</h2>
+        <p></p>
+      </article>
+    </li>
+  </ul>
+</body>
+</html>
